@@ -11,17 +11,17 @@
     <div id="header-menu">&#9776;</div>
     <img id="header-logo" src="logo_thin.png" alt="Website Logo">
   </header>
-  <nav id="menu" class="hidden">
+  <nav id="menu">
     <section>
-      <a>Subcription</a>
-      <a>Articles</a>
+      <a href="#subscription">Subcription</a>
+      <a href="#articles">Articles</a>
     </section>
     <section>
       <a>About</a>
       <a>Contact</a>
     </section>
   </nav>
-  <main>
+  <main id="articles">
       <article>
           <img src="https://picsum.photos/id/619/800/400">
           <section>
@@ -116,6 +116,28 @@
         </div>
       </article>
     -->
+  </main>
+  <main id="subscription">
+    <div id="subscription-options">
+      <div class="subscription-option">
+        <h2>Free</h2>
+        <p>Recieve restricted access to articles</p>
+        <ul>
+          <li>10 Free Articles</li>
+        </ul>
+        <button>Sign Up</button>
+      </div>
+      <div class="subscription-option">
+        <h2>Paid</h2>
+        <p>Pay <b>$8.99 a month</b> and get full access to the site</p>
+        <ul>
+          <li>Unlimited Articles</li>
+          <li>User Submission Access</li>
+          <li>15% payment goes to donation</li>
+        </ul>
+        <button>Subscribe</button>
+      </div>
+    </div>
   </main>
   <footer></footer>
   <script src="index.js"></script>
