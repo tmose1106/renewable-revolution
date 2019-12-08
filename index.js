@@ -15,7 +15,7 @@ let currentHash;
 
 window.addEventListener('hashchange', function() {
     const currentPage = document.getElementById(currentHash.slice(1));
-    
+
     currentPage.classList.toggle('selected');
 
     const newPage = document.getElementById(window.location.hash.slice(1));
@@ -25,6 +25,8 @@ window.addEventListener('hashchange', function() {
     currentHash = window.location.hash;
 
     document.title = `Renewable Revolution | ${capitalizeFirstLetter(currentHash.slice(1))}`;
+
+    window.scrollTo(0, 0); // Scroll to top when switching views
   }, false);
 
 if (window.location.hash === '') {

@@ -31,7 +31,7 @@ header {
 
   color: white;
 
-  box-shadow: 0 0.25em 9px black;
+  box-shadow: 0 0.25em 0.5em black;
 }
 
 #header-logo {
@@ -97,18 +97,16 @@ main {
 
   flex-direction: column;
 
-  margin: 1em 0;
-
   align-items: center;
 
-  grid-column: 1 / 3;
+  grid-column: 2 / 3;
 }
 
 main.selected {
   display: flex;
 }
 
-article {
+#articles article {
   margin: 1em 0;
 
   width: 90vw;
@@ -126,15 +124,15 @@ article img {
   width: 100%;
 }
 
-article section {
+#articles article section {
   padding: 0 1em;
 }
 
-main article section p {
+#articles section p {
   display: none;
 }
 
-main article section p:first-of-type {
+#articles section p:first-of-type {
   display: block;
 }
 
@@ -157,9 +155,9 @@ main article section p:first-of-type {
   margin: 0.5em;
 
   padding: 0.5em 1em;
-  
+
   width: 85vw;
-  
+
   background-color: lightgreen;
 
   box-shadow: 0.2em 0.3em 8px grey;
@@ -175,20 +173,48 @@ main article section p:first-of-type {
   font-size: 1.5em;
 }
 
+#view article {
+  max-width: 1000px;
+
+  background-color: whitesmoke;
+}
+
+#view article section {
+  padding: 1em;
+}
+
+#view-back {
+  display: block;
+
+  padding: 0.25em;
+
+  text-decoration: none;
+
+  color: black;
+}
+
 @media (min-width: 1000px) {
   #header-menu {
     display: none;
   }
-  
+
   nav {
     grid-column: 1 / 2;
   }
 
   main {
     grid-column: 2 / 3;
+
+    padding: 1em 0;
+
+    box-shadow: 1.2em 0 1em -1em black inset;
   }
 
   .subscription-option {
     width: 400px;
+  }
+
+  #view-back {
+    display: none;
   }
 }
